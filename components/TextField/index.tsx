@@ -93,6 +93,7 @@ export const TextField: React.FC<InputProps> = ({
         minLength={minLength}
         maxLength={maxLength}
         pattern={pattern}
+        className={className}
         {...rest}
       />
       {error && (

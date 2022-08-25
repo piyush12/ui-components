@@ -1,13 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 
-import AutoComplete from "../components/AutoComplete";
-import countries from "../components/AutoComplete/countries";
-import { TextField } from "../components/TextField";
 import styles from "../styles/Home.module.css";
-
-const countriesArr = ["India", "China", "United States"];
 
 const Home: NextPage = () => {
   return (
@@ -24,30 +19,8 @@ const Home: NextPage = () => {
           crossOrigin='true'
         />
       </Head>
-      <div className={styles.component}>
-        <div style={{ width: 400 }}>
-        <h3>Autocomplete</h3>
-          <AutoComplete
-            options={countries}
-            // getOptionLabel={(option) => option.code}
-            // renderOption={(option) => (
-            //   <li style={{display:"flex", gap:20, alignItems:"center", fontSize:14}}>
-            //     <Image
-            //       loading='lazy'
-            //       width='20'
-            //       height='20'
-            //       src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
-            //       alt=''
-            //     />
-            //     {option.label} ({option.code}) + {option.phone}
-            //   </li>
-            // )}
-            renderInput={(params) => {
-              return <TextField placeholder='Choose a country' {...params} />;
-            }}
-          />
-        </div>
-      </div>
+      <h1>Components</h1>
+      <Link href="/autocomplete">AutoComplete</Link>
     </div>
   );
 };
