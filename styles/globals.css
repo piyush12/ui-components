@@ -1,9 +1,22 @@
+:root {
+  --bungee-font: "Bungee", cursive;
+  --cinzel-decorative-font: "Cinzel Decorative", cursive;
+  --bodoni-moda-font: 'Bodoni Moda', serif;
+  --josefin-font: "Josefin Slab", serif;
+  --opensans-font: "Open Sans", sans-serif;
+  --app-line-color: #373737;
+  --sub-heading-color: #141414;
+  --text-color: #000;
+  --grey-color: #8e99a5;
+  --light-grey-color:#e7e7e7;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--opensans-font);
+  background-color: var(--light-grey-color);
 }
 
 a {
